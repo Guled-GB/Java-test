@@ -10,8 +10,13 @@
 //Create SoftwareEngineer extends OfficeJob
 //Write your main class to have 1 SoftwareEngineer job and 1 TaxiDriver  job
 //also create 10 people and assign these people to jobs.
-public class Main {
-    public static void main(String[] args) {
 
-    }
-}
+    public class Main {
+            public static void main(String[] args) {
+                SoftwareEngineer engineer = new SoftwareEngineer(1000, "9:00 AM", "5:00 PM", "Java");
+                Person john = new Person("Guled sah", 25, "Male");
+                engineer.hirePerson(john);
+                engineer.printJobDescription();
+                engineer.printWorkers();
+            }
+        }
